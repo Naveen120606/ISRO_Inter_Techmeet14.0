@@ -1,0 +1,86 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: U-2022.12-SP2
+Date   : Sat Dec  6 22:45:33 2025
+****************************************
+
+Library(s) Used:
+
+    uk65lscllmvbbr_120c25_tc (File: /home/*/UMC65/UMK65LSCLLMVBBR_B03_TAPEOUTKIT/synopsys/uk65lscllmvbbr_120c25_tc.db)
+
+Number of ports:                         1986
+Number of nets:                          3712
+Number of cells:                         1509
+Number of combinational cells:            924
+Number of sequential cells:               553
+Number of macros/black boxes:               0
+Number of buf/inv:                        204
+Number of references:                       2
+
+Combinational area:               3690.360037
+Buf/Inv area:                      227.160009
+Noncombinational area:            4379.760042
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  8070.120079
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------------------------------------
+top                               8070.1201    100.0     0.0000     0.0000  0.0000  top
+demodulator_inst                    16.2000      0.2     8.2800     7.9200  0.0000  demodulator
+full_filter_inst                  8053.9201     99.8     0.0000     0.0000  0.0000  full_filter_IW2_OW38_N4_R1512_R24
+full_filter_inst/cic_inst         7613.2801     94.3     0.0000     0.0000  0.0000  cic_top_IW2_OW38_N4_DECIMATION_FACTOR512
+full_filter_inst/cic_inst/combs   4199.0400     52.0     0.0000     0.0000  0.0000  all_combs_IW38_OW38_N4
+full_filter_inst/cic_inst/combs/comb_gen[0].comb
+                                  1049.7600     13.0   114.4800   609.8400  0.0000  comb_IW38_OW38_3
+full_filter_inst/cic_inst/combs/comb_gen[0].comb/sub_37
+                                   325.4400      4.0   325.4400     0.0000  0.0000  comb_IW38_OW38_3_DW01_sub_0_DW01_sub_3
+full_filter_inst/cic_inst/combs/comb_gen[1].comb
+                                  1049.7600     13.0   114.4800   609.8400  0.0000  comb_IW38_OW38_2
+full_filter_inst/cic_inst/combs/comb_gen[1].comb/sub_37
+                                   325.4400      4.0   325.4400     0.0000  0.0000  comb_IW38_OW38_2_DW01_sub_0_DW01_sub_2
+full_filter_inst/cic_inst/combs/comb_gen[2].comb
+                                  1049.7600     13.0   114.4800   609.8400  0.0000  comb_IW38_OW38_1
+full_filter_inst/cic_inst/combs/comb_gen[2].comb/sub_37
+                                   325.4400      4.0   325.4400     0.0000  0.0000  comb_IW38_OW38_1_DW01_sub_0_DW01_sub_1
+full_filter_inst/cic_inst/combs/comb_gen[3].comb
+                                  1049.7600     13.0   114.4800   609.8400  0.0000  comb_IW38_OW38_0
+full_filter_inst/cic_inst/combs/comb_gen[3].comb/sub_37
+                                   325.4400      4.0   325.4400     0.0000  0.0000  comb_IW38_OW38_0_DW01_sub_0
+full_filter_inst/cic_inst/downsampler_inst
+                                   586.0800      7.3   160.9200   380.1600  0.0000  downsampler_W38_DECIMATION_FACTOR512
+full_filter_inst/cic_inst/downsampler_inst/add_47
+                                    45.0000      0.6    45.0000     0.0000  0.0000  downsampler_W38_DECIMATION_FACTOR512_DW01_inc_0_DW01_inc_1
+full_filter_inst/cic_inst/integrators
+                                  2828.1600     35.0     4.3200     0.0000  0.0000  all_integrators_IW2_OW38_N4
+full_filter_inst/cic_inst/integrators/integrator_gen[0].integrator
+                                   705.9600      8.7   113.0400   308.8800  0.0000  integrator_IW38_OW38_3
+full_filter_inst/cic_inst/integrators/integrator_gen[0].integrator/add_41
+                                   284.0400      3.5   284.0400     0.0000  0.0000  integrator_IW38_OW38_3_DW01_add_0_DW01_add_3
+full_filter_inst/cic_inst/integrators/integrator_gen[1].integrator
+                                   705.9600      8.7   113.0400   308.8800  0.0000  integrator_IW38_OW38_2
+full_filter_inst/cic_inst/integrators/integrator_gen[1].integrator/add_41
+                                   284.0400      3.5   284.0400     0.0000  0.0000  integrator_IW38_OW38_2_DW01_add_0_DW01_add_2
+full_filter_inst/cic_inst/integrators/integrator_gen[2].integrator
+                                   705.9600      8.7   113.0400   308.8800  0.0000  integrator_IW38_OW38_1
+full_filter_inst/cic_inst/integrators/integrator_gen[2].integrator/add_41
+                                   284.0400      3.5   284.0400     0.0000  0.0000  integrator_IW38_OW38_1_DW01_add_0_DW01_add_1
+full_filter_inst/cic_inst/integrators/integrator_gen[3].integrator
+                                   705.9600      8.7   113.0400   308.8800  0.0000  integrator_IW38_OW38_0
+full_filter_inst/cic_inst/integrators/integrator_gen[3].integrator/add_41
+                                   284.0400      3.5   284.0400     0.0000  0.0000  integrator_IW38_OW38_0_DW01_add_0
+full_filter_inst/downsampler_inst  440.6400      5.5   123.8400   316.8000  0.0000  downsampler_without_out_ready_W38_DECIMATION_FACTOR4
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------------------------------------------------
+Total                                                 3690.3600  4379.7600  0.0000
+
+1
